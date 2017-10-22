@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.rohit.videogametrivia.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Welcome to the Video Game Trivia! Let's see if you can get all the questions right!"
+            android:textColor="#000000"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            style="@style/Questions"
+            android:text="1) What is the name of the protagonist of the Witcher series? " />
+
+        <RelativeLayout
+            android:layout_width="363dp"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Jimmy"
+                    style="@style/AnswersAtoC"
+                    android:layout_width="200dp"
+                    android:text="Jimmy" />
+
+                <RadioButton
+                    style="@style/AnswersAtoC"
+                    android:layout_width="match_parent"
+                    android:text="Link" />
+
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/correctAns1"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/radioGroup"
+                android:layout_toRightOf="@+id/radioGroup"
+                android:layout_weight="0.36"
+                android:text="Geralt" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                style="@style/AnswersBtoD"
+                android:layout_alignBottom="@+id/radioGroup"
+                android:layout_alignLeft="@+id/correctAns1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/correctAns1"
+                android:layout_weight="0.61"
+                android:text="Red" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/Questions"
+            android:text="2) Which is the highest grossing video game franchise ever?" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    style="@style/AnswersAtoC"
+                    android:layout_width="match_parent"
+                    android:text="Sonic" />
+
+                <RadioButton
+                    android:id="@+id/checkBox5"
+                    style="@style/AnswersAtoC"
+                    android:layout_width="199dp"
+                    android:text="Pokemon" />
+
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/radioGroup2"
+                android:layout_weight="0.60"
+                android:text="GTA" />
+
+            <RadioButton
+                android:id="@+id/correctAns2"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/radioButton5"
+                android:layout_toRightOf="@+id/radioGroup2"
+                android:layout_weight="0.59"
+                android:text="mario" />
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/Questions"
+            android:text="3) What is Bethesda's best selling game?" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/AnswersAtoC"
+                    android:layout_width="197dp"
+                    android:text="Fallout" />
+
+                <RadioButton
+                    android:id="@+id/correctAns3"
+                    style="@style/AnswersAtoC"
+                    android:layout_weight="1"
+                    android:text="Skyrim" />
+
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/radioGroup3"
+                android:layout_weight="0.26"
+                android:text="Dishonored" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/radioGroup3"
+                android:layout_weight="0.55"
+                android:text="Doom" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/Questions"
+            android:text="4) Which game got the 'Game Of The Year' award in the year 2016 given by The Game Awards? " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/AnswersAtoC"
+                    android:layout_width="196dp"
+                    android:text="Doom" />
+
+                <RadioButton
+                    style="@style/AnswersAtoC"
+                    android:layout_weight="1"
+                    android:text="Uncharted 4" />
+
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/radioGroup4"
+                android:layout_weight="0.26"
+                android:text="Titanfall 2" />
+
+            <RadioButton
+                android:id="@+id/correctAns4"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/radioGroup4"
+                android:layout_weight="0.36"
+                android:text="Overwatch" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/Questions"
+            android:text="5) What is Nintendo's new console called?" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/correctAns5"
+                    style="@style/AnswersAtoC"
+                    android:layout_width="195dp"
+                    android:text="Switch" />
+
+                <RadioButton
+                    style="@style/AnswersAtoC"
+                    android:layout_width="match_parent"
+                    android:text="Project NX" />
+
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/radioGroup5"
+                android:layout_weight="0.70"
+                android:text="Wii" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                style="@style/AnswersBtoD"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/radioGroup5"
+                android:layout_weight="0.78"
+                android:text="Wii u" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:onClick="submitQuiz"
+            android:text="Check Answer" />
+
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

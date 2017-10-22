@@ -3,7 +3,7 @@ package com.project.rohit.videogametrivia;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,19 +16,19 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void submitQuiz(View view) {
-        CheckBox correctAnswer1 = (CheckBox) findViewById(R.id.correctAns1);
+        RadioButton correctAnswer1 = (RadioButton) findViewById(R.id.correctAns1);
         boolean gotCorrect1 = correctAnswer1.isChecked();
 
-        CheckBox correctAnswer2 = (CheckBox) findViewById(R.id.correctAns2);
+        RadioButton correctAnswer2 = (RadioButton) findViewById(R.id.correctAns2);
         boolean gotCorrect2 = correctAnswer2.isChecked();
 
-        CheckBox correctAnswer3 = (CheckBox) findViewById(R.id.correctAns3);
+        RadioButton correctAnswer3 = (RadioButton) findViewById(R.id.correctAns3);
         boolean gotCorrect3 = correctAnswer3.isChecked();
 
-        CheckBox correctAnswer4 = (CheckBox) findViewById(R.id.correctAns4);
+        RadioButton correctAnswer4 = (RadioButton) findViewById(R.id.correctAns4);
         boolean gotCorrect4 = correctAnswer4.isChecked();
 
-        CheckBox correctAnswer5 = (CheckBox) findViewById(R.id.correctAns5);
+        RadioButton correctAnswer5 = (RadioButton) findViewById(R.id.correctAns5);
         boolean gotCorrect5 = correctAnswer5.isChecked();
 
         String totalScore = createScoreSummary(gotCorrect1, gotCorrect2, gotCorrect3, gotCorrect4, gotCorrect5);
